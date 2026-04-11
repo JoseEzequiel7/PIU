@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q10</title>
+</head>
+<body>
+
+    <script>
+        function validarNome(nome) {
+            if (typeof nome !== "string" || nome.trim() === "") {
+                throw new Error("Nome inválido")
+                }
+        }
+
+        function validarIdade(idade) {
+            if (!Number.isInteger(idade) || idade < 0) {
+                throw new Error("Idade inválida")
+                }
+        }
+
+        function validarFoiADisney(valor) {
+            if (typeof valor !== "boolean") {
+                throw new Error("Valor em 'ja_foi_a_Disney' inválido")
+                }
+        }
+
+        let nomeValido = false
+        let idadeValida = false
+        let disneyValido = false
+
+        let nome, idade, ja_foi_a_Disney
+
+        while (!nomeValido || !idadeValida || !disneyValido) {
+
+            try {
+                if (!nomeValido) {
+                    nome = prompt("Digite o nome:")
+                    validarNome(nome)
+                    nomeValido = true
+                }
+
+                if (!idadeValida) {
+                    idade = Number(prompt("Digite a idade:"))
+                    validarIdade(idade)
+                    idadeValida = true
+                }
+
+                if (!disneyValido) {
+                    let entrada = prompt("Já foi à Disney? (true/false):")
+
+                if (entrada === "true") {
+                    ja_foi_a_Disney = true
+                } else if (entrada === "false") {
+                    ja_foi_a_Disney = false
+                } else {
+                    ja_foi_a_Disney = entrada 
+                }
+
+                validarFoiADisney(ja_foi_a_Disney)
+                disneyValido = true
+                }
+
+            } catch (erro) {
+                alert(erro.message)
+            }
+        }
+
+        console.log("Nome:", nome)
+        console.log("Idade:", idade)
+        console.log("Já foi à Disney:", ja_foi_a_Disney)
+
+    </script>
+
+</body>
+</html>

@@ -24,3 +24,4 @@ let numeros = [17, 83, 42, 5, 91, 2.8, 64, 10]
 
 let resultado = contarParesImpares(numeros)
 console.log(resultado)
+

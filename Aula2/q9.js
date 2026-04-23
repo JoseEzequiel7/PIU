@@ -19,7 +19,7 @@ function validarFoiADisney(valor) {
 let pessoa = {
     nome: "Vinicius",
     idade: 99,
-    ja_foi_a_Disney: 'não'
+    ja_foi_a_Disney: false
 }
 
 validarNome(pessoa.nome)
@@ -29,3 +29,4 @@ validarFoiADisney(pessoa.ja_foi_a_Disney)
 console.log(pessoa.nome)
 console.log(pessoa.idade)
 console.log(pessoa.ja_foi_a_Disney)
+

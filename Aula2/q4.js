@@ -7,3 +7,4 @@ let pessoa = {
 console.log(pessoa.nome)
 console.log(pessoa.idade)
 console.log(pessoa.ja_foi_a_Disney)
+

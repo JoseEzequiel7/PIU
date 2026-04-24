@@ -1,5 +1,5 @@
-function multiplicar(fator, numeros) {
-    return numeros.map(function(num) {
+function multiplicar(fator, n) {
+    return n.map(function(num) {
         return num * fator;
     });
 }

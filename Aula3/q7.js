@@ -1,6 +1,6 @@
-function filtrar(divisor, numeros) {
-    return numeros.filter(function(num) {
-        return num % divisor === 0;
+function filtrar(div, num) {
+    return num.filter(function(n) {
+        return n % div === 0;
     });
 }
 

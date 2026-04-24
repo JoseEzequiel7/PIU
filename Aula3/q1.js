@@ -1,9 +1,9 @@
-function parOuImpar(numeros) {
-    numeros.forEach(function(numero) {
-        if (numero % 2 === 0) {
-            console.log(numero + " é par");
+function parOuImpar(n) {
+    n.forEach(function(num) {
+        if (num % 2 === 0) {
+            console.log(num + " é par");
         } else {
-            console.log(numero + " é ímpar");
+            console.log(num + " é ímpar");
         }
     });
 }

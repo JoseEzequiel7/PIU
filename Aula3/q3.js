@@ -1,5 +1,5 @@
-function dobrar(numeros) {
-    return numeros.map(function(num) {
+function dobrar(n) {
+    return n.map(function(num) {
         return num * 2;
     });
 }

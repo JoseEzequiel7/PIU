@@ -1,5 +1,5 @@
-function filtrarPares(numeros) {
-    return numeros.filter(function(num) {
+function filtrarPares(n) {
+    return n.filter(function(num) {
         return num % 2 === 0;
     });
 }

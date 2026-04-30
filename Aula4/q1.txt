@@ -1,0 +1,2 @@
+Porque o const não torna o conteúdo imutável, apenas impede que a variável seja reatribuída. Objetos são armazenados por referência na memória, 
+e o const protege apenas a referência, não os dados internos.
